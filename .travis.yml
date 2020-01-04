@@ -4,4 +4,4 @@ install:
   - brew cask install mono-mdk
   - export PATH=$(cat /etc/paths.d/mono-commands):$PATH  # add mono to path
 script:
-  - brew install -v --HEAD Formula/flintc.rb
+  - sudo brew install -v --HEAD Formula/flintc.rb
