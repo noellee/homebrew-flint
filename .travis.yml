@@ -1,5 +1,6 @@
 os: osx
 install:
+  - brew update
   - brew cask install mono-mdk
   - which mono
 script:
