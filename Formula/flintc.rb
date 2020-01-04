@@ -30,7 +30,7 @@ class Flintc < Formula
       system "swiftenv rehash"
       ENV["PATH"] = "#{ENV["HOME"]}/.swiftenv/shims:#{ENV["PATH"]}"
       if not `swiftenv versions`.split.include? "5.0.2"
-        system "swiftenv", "install", "5.0.2", "--user"
+        system "swiftenv", "install", "--user", "5.0.2"
       end
       system "swift", "--version"
       system "make", "release", "BUILD_FLAGS=--product flintc --disable-sandbox"
