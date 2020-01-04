@@ -7,7 +7,7 @@ class MonoRequirement < Requirement
 
   def message; <<~EOS
     mono is required; install it via:
-      brew cask install mono
+      brew cask install mono-mdk
     EOS
   end
 end
