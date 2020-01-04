@@ -1,5 +1,6 @@
 os: osx
 install:
   - brew cask install mono-mdk
+  - which mono
 script:
   - brew install -v --HEAD Formula/flintc.rb
