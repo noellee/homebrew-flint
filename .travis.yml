@@ -1,7 +1,7 @@
 os: osx
 install:
-  - brew update
   - brew cask install mono-mdk
+  - export PATH=$(cat /etc/paths.d/mono-commands):$PATH 
   - which mono
 script:
   - brew install -v --HEAD Formula/flintc.rb
